@@ -3,7 +3,7 @@ import { Box, List, ListItemButton, ListItemText, Collapse } from '@mui/material
 import { ExpandLess, ExpandMore } from '@mui/icons-material';
 import Lang from './lang';
 
-export function ListMenu({ open, toggleDrawer, handleClick, colorR, lang, openDash, handleClickDash, anchorEl, handleCloseDash }) {
+export function ListMenu({ open, toggleDrawer, handleClick, colorR, lang, setLang }) {
     return (
         <Box
             sx={{ width: 300 }}
@@ -12,15 +12,9 @@ export function ListMenu({ open, toggleDrawer, handleClick, colorR, lang, openDa
             onKeyDown={toggleDrawer(false)}
         >
             <List>
-                <Lang
-                    lang={lang}
-                    openDash={openDash}
-                    handleClickDash={handleClickDash}
-                    handleCloseDash={handleCloseDash}
-                    anchorEl={anchorEl}
-                />
+                <Lang lang={lang} setLang={setLang} />
                 <ListItemButton onClick={handleClick} sx={{ color: colorR }} >
-                    <ListItemText primary="Nuesta Compañía" />
+                    <ListItemText primary="Nuestra Compañía" />
                     <div>
                         {open ? <ExpandLess /> : <ExpandMore />}
                     </div>
@@ -48,9 +42,3 @@ export function ListMenu({ open, toggleDrawer, handleClick, colorR, lang, openDa
         </Box>
     );
 }
-
-
-export function ListSimple() {
-
-}
-

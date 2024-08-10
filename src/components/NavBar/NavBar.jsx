@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 import './NavBar.css';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import logo from '../../assets/company.png';
@@ -9,41 +9,26 @@ import { ListMenu } from './utils/list';
 export default function Navbar() {
     const [menu, setMenu] = useState(false);
     const [open, setOpen] = useState(false);
-    const [lang, setLang] = useState(false);
-    const [anchorEl, setAnchorEl] = useState(null);
-    const openDash = Boolean(anchorEl);
+    const [lang, setLang] = useState('ES');
 
     const toggleDrawer = (open) => (event) => {
         if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
             return;
         }
+        setMenu(open);
         if (!open) {
             setOpen(false);
         }
-        setMenu(open);
     };
 
     const handleClick = (e) => {
         e.stopPropagation();
-        colorR();
         setOpen(!open);
     };
 
     function colorR() {
         return open ? '#158EE2' : '#000';
     }
-
-    const handleClickDash = (event) => {
-        event.stopPropagation();
-        setAnchorEl(event.currentTarget);
-        setLang(true);
-    };
-
-    const handleCloseDash = (event) => {
-        event.stopPropagation();
-        setAnchorEl(null);
-        setLang(false);
-    };
 
     return (
         <>
@@ -54,7 +39,7 @@ export default function Navbar() {
                     </div>
                     <div className="health-navbar-menu">
                         <Button onClick={toggleDrawer(true)}>
-                            <DehazeIcon sx={{ color: '#fff', height: '40px', width: '40px' }} />
+                            <DehazeIcon sx={{ color: '#fff', height: '30px', width: '30px' }} />
                         </Button>
                         <SwipeableDrawer
                             anchor={'right'}
@@ -68,15 +53,12 @@ export default function Navbar() {
                                 handleClick={handleClick}
                                 colorR={colorR}
                                 lang={lang}
-                                openDash={openDash}
-                                handleClickDash={handleClickDash}
-                                anchorEl={anchorEl}
-                                handleCloseDash={handleCloseDash}
+                                setLang={setLang} // Pasamos setLang para manejar el idioma
                             />
                         </SwipeableDrawer>
                     </div>
                 </nav>
             </header>
         </>
-    )
+    );
 }
