@@ -4,5 +4,15 @@
     align-items: center;
     height: 70px;
     padding: 10px;
-    color: #fff
+    color: #fff;
+}
+
+.health-navbar-menu {
+    display: none;
+}
+
+@media (max-width:720px) {
+    .health-navbar-menu {
+        display: block;
+    }
 }
