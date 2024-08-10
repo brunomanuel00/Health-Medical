@@ -1,26 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Select, MenuItem, FormControl } from '@mui/material';
 import spain from '../../../assets/Spain (ES).png';
 import usa from '../../../assets/United States of America (US).png';
 import CloseIcon from '@mui/icons-material/Close';
+import { ExpandLess, ExpandMore } from '@mui/icons-material';
 
 export default function Lang({ lang, setLang }) {
+    const [isOpen, setIsOpen] = useState(false);
+
     const handleChange = (event) => {
         setLang(event.target.value);
+        setIsOpen(false);
+
     };
 
-    function handleClick(e) {
+    const handleClick = (e) => {
         e.stopPropagation();
-    }
+        setIsOpen(prevState => !prevState);
+    };
 
     return (
-        <FormControl variant="outlined" sx={{ margin: '4px', minWidth: 120, display: 'block' }}>
+        <FormControl sx={{ margin: '4px', minWidth: 120, display: 'block' }}>
             <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Select
+                    sx={{
+                        '& .MuiSelect-select': {
+                            padding: '8px 16px',
+                            border: 'none',
+                        },
+                        '& .MuiOutlinedInput-notchedOutline': {
+                            border: 'none',
+                        },
+                        '& .MuiSelect-icon': {
+                            display: 'none',
+                        },
+                        backgroundColor: 'transparent',
+                    }}
                     value={lang}
                     onChange={handleChange}
                     onClick={handleClick}
-                    displayEmpty
+                    open={isOpen}
+                    IconComponent={() => isOpen ? <ExpandLess /> : <ExpandMore />}
                     renderValue={(selected) => {
                         if (!selected) {
                             return (
