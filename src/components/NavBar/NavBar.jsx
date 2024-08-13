@@ -27,7 +27,7 @@ export default function Navbar() {
     };
 
     function colorR() {
-        return open ? '#158EE2' : '#000';
+        return open ? '#158EE2' : '#626265';
     }
 
     return (
@@ -35,13 +35,14 @@ export default function Navbar() {
             <header className="health-navbar-header">
                 <nav className="health-navbar-nav">
                     <div className="health-navbar-logo">
-                        <img src={logo} alt="MoyaMedical" height={43} width={250} />
+                        <img src={logo} alt="MoyaMedical" height={35} width={200} />
                     </div>
                     <div className="health-navbar-menu">
-                        <Button onClick={toggleDrawer(true)}>
-                            <DehazeIcon sx={{ color: '#fff', height: '30px', width: '30px' }} />
+                        <Button sx={{ marginRight: '-20px' }} onClick={toggleDrawer(true)}>
+                            <DehazeIcon sx={{ color: '#fff', height: '25px', width: '25px' }} />
                         </Button>
                         <SwipeableDrawer
+                            className="health-navbar-menu-drawer"
                             anchor={'right'}
                             open={menu}
                             onClose={toggleDrawer(false)}

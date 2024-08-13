@@ -6,10 +6,11 @@ import Lang from './lang';
 export function ListMenu({ open, toggleDrawer, handleClick, colorR, lang, setLang }) {
     return (
         <Box
-            sx={{ width: 300 }}
+            sx={{ width: 300, color: '#626265' }}
             role="presentation"
             onClick={toggleDrawer(false)}
             onKeyDown={toggleDrawer(false)}
+
         >
             <List>
                 <Lang lang={lang} setLang={setLang} />
@@ -21,13 +22,13 @@ export function ListMenu({ open, toggleDrawer, handleClick, colorR, lang, setLan
                 </ListItemButton>
                 <Collapse in={open} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
-                        <ListItemButton sx={{ pl: 2 }}>
+                        <ListItemButton sx={{ pl: 4 }}>
                             <ListItemText primary="Moya Medical" />
                         </ListItemButton>
-                        <ListItemButton sx={{ pl: 2 }}>
+                        <ListItemButton sx={{ pl: 4 }}>
                             <ListItemText primary="Por qué nosotros" />
                         </ListItemButton>
-                        <ListItemButton sx={{ pl: 2 }}>
+                        <ListItemButton sx={{ pl: 4 }}>
                             <ListItemText primary="Ubicación en el mapa" />
                         </ListItemButton>
                     </List>

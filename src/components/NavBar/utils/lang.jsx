@@ -11,6 +11,7 @@ export default function Lang({ lang, setLang }) {
     const handleChange = (event) => {
         setLang(event.target.value);
         setIsOpen(false);
+        setIsOpen(prevState => !prevState);
 
     };
 
@@ -20,7 +21,7 @@ export default function Lang({ lang, setLang }) {
     };
 
     return (
-        <FormControl sx={{ margin: '4px', minWidth: 120, display: 'block' }}>
+        <FormControl className='lang-form' sx={{ minWidth: 120, display: 'block', color: '#626265' }}>
             <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Select
                     sx={{
@@ -45,7 +46,7 @@ export default function Lang({ lang, setLang }) {
                         if (!selected) {
                             return (
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                                    <img src={spain} alt="Spain" width={25} height={25} style={{ marginRight: 8 }} />
+                                    <img src={spain} alt="Spain" width={20} height={20} style={{ marginRight: 8 }} />
                                     <span>ES</span>
                                 </div>
                             );
@@ -56,8 +57,8 @@ export default function Lang({ lang, setLang }) {
                                 <img
                                     src={selected === 'ES' ? spain : usa}
                                     alt={selected === 'ES' ? 'Spain' : 'USA'}
-                                    width={25}
-                                    height={25}
+                                    width={20}
+                                    height={20}
                                     style={{ marginRight: 8 }}
                                 />
                                 <span>{selected}</span>
@@ -65,16 +66,16 @@ export default function Lang({ lang, setLang }) {
                         );
                     }}
                 >
-                    <MenuItem value="ES">
-                        <img src={spain} alt="Spain" width={25} height={25} style={{ marginRight: 8 }} />
+                    <MenuItem sx={{ fontSize: '0.83em' }} value="ES">
+                        <img src={spain} alt="Spain" width={20} height={20} style={{ marginRight: 8 }} />
                         <span>ES</span>
                     </MenuItem>
-                    <MenuItem value="EN">
-                        <img src={usa} alt="USA" width={25} height={25} style={{ marginRight: 8 }} />
+                    <MenuItem sx={{ fontSize: '0.83em' }} value="EN">
+                        <img src={usa} alt="USA" width={20} height={20} style={{ marginRight: 8 }} />
                         <span>EN</span>
                     </MenuItem>
                 </Select>
-                <div><CloseIcon sx={{ height: '30px', width: '30px', color: '#158EE2' }} /></div>
+                <div><CloseIcon sx={{ height: '25px', width: '25px', color: '#158EE2' }} /></div>
             </div>
         </FormControl>
     );
