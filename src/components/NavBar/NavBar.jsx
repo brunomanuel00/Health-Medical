@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import './NavBar.css';
+import { Link } from "react-router-dom";
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import logo from '../../assets/company.png';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Button from '@mui/material/Button';
-import { ListMenu } from './utils/list';
+import { ListMenu, ListMenuSimple } from './utils/list';
 
 export default function Navbar() {
     const [menu, setMenu] = useState(false);
@@ -35,12 +35,14 @@ export default function Navbar() {
             <header className="health-navbar-header">
                 <nav className="health-navbar-nav">
                     <div className="health-navbar-logo">
-                        <img src={logo} alt="MoyaMedical" height={35} width={200} />
+                        <Link to='/'>
+                            <img src={logo} alt="MoyaMedical" height={35} width={200} />
+                        </Link>
                     </div>
                     <div className="health-navbar-menu">
-                        <Button sx={{ marginRight: '-20px' }} onClick={toggleDrawer(true)}>
+                        <button id="health-navbar-menu-button" onClick={toggleDrawer(true)}>
                             <DehazeIcon sx={{ color: '#fff', height: '25px', width: '25px' }} />
-                        </Button>
+                        </button>
                         <SwipeableDrawer
                             className="health-navbar-menu-drawer"
                             anchor={'right'}
@@ -54,10 +56,11 @@ export default function Navbar() {
                                 handleClick={handleClick}
                                 colorR={colorR}
                                 lang={lang}
-                                setLang={setLang} // Pasamos setLang para manejar el idioma
+                                setLang={setLang}
                             />
                         </SwipeableDrawer>
                     </div>
+                    <ListMenuSimple />
                 </nav>
             </header>
         </>

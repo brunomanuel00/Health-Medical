@@ -21,8 +21,8 @@ export default function Lang({ lang, setLang }) {
     };
 
     return (
-        <FormControl className='lang-form' sx={{ minWidth: 120, display: 'block', color: '#626265' }}>
-            <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <FormControl className='lang-form' sx={{ minWidth: 90, display: 'block', color: '#626265' }}>
+            <div className='lang-form-div' >
                 <Select
                     sx={{
                         '& .MuiSelect-select': {
@@ -36,6 +36,7 @@ export default function Lang({ lang, setLang }) {
                             display: 'none',
                         },
                         backgroundColor: 'transparent',
+                        textAlign: 'center'
                     }}
                     value={lang}
                     onChange={handleChange}
@@ -46,8 +47,8 @@ export default function Lang({ lang, setLang }) {
                         if (!selected) {
                             return (
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                                    <img src={spain} alt="Spain" width={20} height={20} style={{ marginRight: 8 }} />
-                                    <span>ES</span>
+                                    <img className='lang-form-selected' src={spain} alt="Spain" width={20} height={20} style={{ marginRight: 8 }} />
+                                    <span className='lang-form-span'>ES</span>
                                 </div>
                             );
                         }
@@ -61,21 +62,21 @@ export default function Lang({ lang, setLang }) {
                                     height={20}
                                     style={{ marginRight: 8 }}
                                 />
-                                <span>{selected}</span>
+                                <span className='lang-form-span'>{selected}</span>
                             </div>
                         );
                     }}
                 >
                     <MenuItem sx={{ fontSize: '0.83em' }} value="ES">
                         <img src={spain} alt="Spain" width={20} height={20} style={{ marginRight: 8 }} />
-                        <span>ES</span>
+                        <span className='lang-form-span'>ES</span>
                     </MenuItem>
                     <MenuItem sx={{ fontSize: '0.83em' }} value="EN">
                         <img src={usa} alt="USA" width={20} height={20} style={{ marginRight: 8 }} />
-                        <span>EN</span>
+                        <span className='lang-form-span'>EN</span>
                     </MenuItem>
                 </Select>
-                <div><CloseIcon sx={{ height: '25px', width: '25px', color: '#158EE2' }} /></div>
+                <div className='lang-form-span'><CloseIcon sx={{ height: '25px', width: '25px', color: '#158EE2' }} /></div>
             </div>
         </FormControl>
     );

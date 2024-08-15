@@ -1,6 +1,6 @@
 .health-navbar-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 70px;
     padding: 10px;
@@ -15,10 +15,116 @@
     font-size: 0.83em;
 }
 
-@media (max-width:720px) {
+.health-navbar-logo {
+    width: '';
+}
+
+.health-navbar-menu-simple-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.health-navbar-menu-simple-ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.health-navbar-menu-simple-ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.health-navbar-menu-simple-ul li a:hover {
+    color: #158EE2;
+}
+
+.lang-form-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang-form-span {
+    display: none;
+}
+
+/* media query 1 */
+
+@media only screen and (max-width:768px) {
     .health-navbar-menu, .health-navbar-menu-drawer {
         display: block;
     }
 
+    .health-navbar-logo {
+        width: 92%;
+    }
 
+    #health-navbar-menu-button {
+        background-color: transparent;
+        box-shadow: none;
+        outline: none;
+        border: none;
+    }
+
+    .health-navbar-menu-simple {
+        display: none;
+    }
+
+    .lang-form-span {
+        display: inline;
+        margin-right: 5px;
+    }
+}
+
+
+/* Media query 2 */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .health-navbar-menu-simple-ul li {
+        margin: 8px;
+        text-align: center;
+    }
+
+    .lang-form-div {
+        width: 60px;
+        margin-right: 5px;
+    }
+
+    .lang-form {
+        margin: 0;
+    }
+
+    svg {
+        color: #fff;
+        margin-left: -30px;
+    }
+}
+
+
+/* Media query 3 */
+@media only screen and (min-width: 1024px) {
+    .health-navbar-menu-simple-ul li {
+        margin: 24px;
+        text-align: center;
+    }
+
+    svg {
+        color: #fff;
+        margin-left: -30px;
+    }
+
+    .health-navbar-menu-simple-ul li {
+        margin: 8px;
+        text-align: center;
+    }
+
+    .lang-form-div {
+        width: 60px;
+        margin-right: 5px;
+    }
+
+        {
+        width: 20px !important;
+    }
 }
