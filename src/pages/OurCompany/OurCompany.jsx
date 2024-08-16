@@ -1,4 +1,4 @@
 export default function OurCompany() {
-    return <div> WORKS</div>
+    return <div> Our Company</div>
 
 };

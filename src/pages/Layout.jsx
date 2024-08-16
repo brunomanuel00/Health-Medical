@@ -1,7 +1,8 @@
+import { Outlet } from 'react-router-dom';
 import Navbar from '../components/NavBar/NavBar'
 import React, { useState, useEffect } from 'react';
 
-export default function Home() {
+export default function Layout() {
 
     const [windowSize, setWindowSize] = useState({
         width: window.innerWidth,
@@ -29,6 +30,10 @@ export default function Home() {
                 <p>Anchura de la ventana: {windowSize.width}px</p>
                 <p>Altura de la ventana: {windowSize.height}px</p>
             </div>
+            <main>
+                <Outlet />
+            </main>
+
 
         </>
     )
