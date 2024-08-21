@@ -32,7 +32,7 @@ export default function Navbar() {
 
     return (
         <>
-            <header className="health-navbar-header">
+            <header className="health-navbar-header" style={{ position: 'relative', zIndex: 20 }}>
                 <nav className="health-navbar-nav">
                     <div className="health-navbar-logo">
                         <Link to='/'>

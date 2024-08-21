@@ -7,6 +7,7 @@ import { autoPlay } from 'react-swipeable-views-utils';
 import doctor1 from '../../assets/Doctor.png'
 import doctor2 from '../../assets/Doctor-2.webp'
 import doctor3 from '../../assets/Doctor-3.webp'
+import './Carrousel.css'
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -35,41 +36,47 @@ export default function Carrousel() {
     };
 
     return (
-        <Box sx={{ width: '100%', flexGrow: 1, position: 'absolute', top: 0, zIndex: -1 }}>
-            <AutoPlaySwipeableViews
-                axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                index={activeStep}
-                onChangeIndex={handleStepChange}
-                enableMouseEvents
-            >
-                {images.map((step, index) => (
-                    <div key={step.label}>
-                        {Math.abs(activeStep - index) <= 2 ? (
-                            <Box
-                                component="img"
-                                sx={{
-                                    objectFit: 'cover',
-                                    display: 'block',
-                                    width: "100%",
-                                    overflow: 'hidden',
-                                    height: '900px',
-                                }}
-                                src={step.imgPath}
-                                alt={step.label}
-                            />
-                        ) : null}
-                    </div>
-                ))}
-            </AutoPlaySwipeableViews>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <MobileStepper
-                    steps={maxSteps}
-                    position="static"
-                    activeStep={activeStep}
-                    sx={{ backgroundColor: 'transparent', marginTop: '-20px', zIndex: '50' }}
-                />
-            </div>
+        <div>
+            <div className='gradient-carrousel'></div>
+            <Box sx={{ width: '100%', flexGrow: 1, position: 'absolute', top: 0, zIndex: -1 }}>
+                <AutoPlaySwipeableViews
+                    axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+                    index={activeStep}
+                    onChangeIndex={handleStepChange}
+                    enableMouseEvents
+                >
+                    {images.map((step, index) => (
+                        <div key={step.label}>
+                            {Math.abs(activeStep - index) <= 2 ? (
+                                <Box
+                                    component="img"
+                                    sx={{
+                                        objectFit: 'cover',
+                                        display: 'block',
+                                        width: "100%",
+                                        overflow: 'hidden',
+                                        height: '790px',
+                                        paddingBottom: '6px',
+                                        borderRadius: '25% 25% 35% 35% / 0% 0% 7% 7%',
+                                        zIndex: '30'
+                                    }}
+                                    src={step.imgPath}
+                                    alt={step.label}
+                                />
+                            ) : null}
+                        </div>
+                    ))}
+                </AutoPlaySwipeableViews>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <MobileStepper
+                        steps={maxSteps}
+                        position="static"
+                        activeStep={activeStep}
+                        sx={{ backgroundColor: 'transparent', marginTop: '-110px', zIndex: '50' }}
+                    />
+                </div>
+            </Box>
+        </div>
 
-        </Box>
     );
 }
