@@ -38,7 +38,7 @@ export default function Carrousel() {
     return (
         <div>
             <div className='gradient-carrousel'></div>
-            <Box sx={{ width: '100%', flexGrow: 1, position: 'absolute', top: 0, zIndex: -1 }}>
+            <Box className='gradient-carrousel-container'>
                 <AutoPlaySwipeableViews
                     axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                     index={activeStep}
@@ -50,16 +50,7 @@ export default function Carrousel() {
                             {Math.abs(activeStep - index) <= 2 ? (
                                 <Box
                                     component="img"
-                                    sx={{
-                                        objectFit: 'cover',
-                                        display: 'block',
-                                        width: "100%",
-                                        overflow: 'hidden',
-                                        height: '790px',
-                                        paddingBottom: '6px',
-                                        borderRadius: '25% 25% 35% 35% / 0% 0% 7% 7%',
-                                        zIndex: '30'
-                                    }}
+                                    className='gradient-carrousel-img'
                                     src={step.imgPath}
                                     alt={step.label}
                                 />
@@ -67,12 +58,12 @@ export default function Carrousel() {
                         </div>
                     ))}
                 </AutoPlaySwipeableViews>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <div className='gradient-carrousel-swipeable' >
                     <MobileStepper
                         steps={maxSteps}
                         position="static"
                         activeStep={activeStep}
-                        sx={{ backgroundColor: 'transparent', marginTop: '-110px', zIndex: '50' }}
+                        className='gradient-carrousel-swipeable-points'
                     />
                 </div>
             </Box>

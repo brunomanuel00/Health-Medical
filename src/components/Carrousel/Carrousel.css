@@ -10,3 +10,33 @@
     background: linear-gradient(180deg, rgba(0, 22, 57, 1) 0%, rgba(0, 22, 57, 0.6012998949579832) 13%, rgba(0, 22, 57, 0) 100%);
     ;
 }
+
+.gradient-carrousel-container {
+    width: 100%;
+    flex-grow: 1;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.gradient-carrousel-img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    height: 790px;
+    padding-bottom: 6px;
+    border-radius: 25% 25% 35% 35% / 0% 0% 7% 7%;
+    z-index: 30;
+}
+
+.gradient-carrousel-swipeable {
+    display: flex;
+    justify-content: center;
+}
+
+.gradient-carrousel-swipeable-points {
+    background-color: transparent !important;
+    margin-top: -200px !important;
+    z-index: 50;
+}

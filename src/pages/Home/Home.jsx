@@ -1,13 +1,21 @@
 import React from "react"
 import Carrousel from "../../components/Carrousel/Carrousel"
+import Button from '@mui/material/Button';
+import './Home.css'
 
 export default function Home() {
     return (
         <div>
             <Carrousel />
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <h1 style={{ color: '#fff', width: '360px', textAlign: 'center', zIndex: 10, marginTop: '150px', fontSize: '50px' }}>Tu bientestar es nuestra prioridad</h1>
+            <div className="home-container-presentation">
+                <h1 className='home-title'>
+                    Tu bienestar es nuestra prioridad
+                </h1>
+                <Button className="home-contact-button" variant="contained">
+                    Contáctanos
+                </Button>
             </div>
+
         </div>
     )
 
