@@ -6,8 +6,7 @@ export default function Home() {
         <div>
             <Carrousel />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-
-                <h1 style={{ color: '#fff', width: '360px', textAlign: 'center', zIndex: 10 }}>Tu bientestar es nuestra prioridad</h1>
+                <h1 style={{ color: '#fff', width: '360px', textAlign: 'center', zIndex: 10, marginTop: '150px', fontSize: '50px' }}>Tu bientestar es nuestra prioridad</h1>
             </div>
         </div>
     )
