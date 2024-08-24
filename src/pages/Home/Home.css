@@ -11,6 +11,7 @@
     text-align: center;
     z-index: 11;
     margin-top: 180px;
+    width: 360px;
     font-size: 50px;
 }
 
@@ -19,4 +20,32 @@
     width: 320px;
     border-radius: 50px !important;
     margin-top: 50px !important;
+}
+
+
+/**************************** Media 1 ****************************/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .home-title {
+        font-size: 60px;
+        width: 500px;
+    }
+}
+
+
+
+/**************************** Media 2 ***************************/
+@media only screen and (min-width: 1025px) and (max-width: 1919px) {
+    .home-title {
+        font-size: 65px;
+        width: 600px;
+    }
+}
+
+
+/**************************** Media 3 ****************************/
+@media only screen and (min-width: 1920px) {
+    .home-title {
+        font-size: 70px;
+        width: 700px;
+    }
 }

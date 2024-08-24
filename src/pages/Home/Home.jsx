@@ -1,7 +1,8 @@
 import React from "react"
 import Carrousel from "../../components/Carrousel/Carrousel"
 import Button from '@mui/material/Button';
-import './Home.css'
+import './Home.css';
+import Cards from "../../components/Card/Cards";
 
 export default function Home() {
     return (
@@ -15,7 +16,7 @@ export default function Home() {
                     Contáctanos
                 </Button>
             </div>
-
+            <Cards />
         </div>
     )
 
