@@ -1,0 +1,10 @@
+.footer-container {
+    background-color: #101C37;
+    height: 400px;
+    border-radius: 50% 50% 25% 25% / 11% 11% 0% 0%;
+}
+
+.lang-form-footer-div svg:nth-of-type(2) {
+    color: #fff !important;
+    margin-left: -30px !important;
+}
