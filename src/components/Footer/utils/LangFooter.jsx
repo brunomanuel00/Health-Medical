@@ -23,6 +23,7 @@ export default function LangFooter({ lang, setLang }) {
         <FormControl sx={{ minWidth: 90, display: 'block', color: '#626265' }}>
             <div className='lang-form-footer-div' >
                 <Select
+                    className='footer-select'
                     sx={{
                         '& .MuiSelect-select': {
                             padding: '8px 16px',
@@ -36,6 +37,9 @@ export default function LangFooter({ lang, setLang }) {
                         },
                         backgroundColor: 'transparent',
                         textAlign: 'center',
+                        // minWidth: '40px',
+                        // maxWidth: '45px',
+                        // color: ' #fff'
                     }
                     }
                     value={lang}

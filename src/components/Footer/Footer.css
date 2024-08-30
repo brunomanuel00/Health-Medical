@@ -1,10 +1,98 @@
 .footer-container {
     background-color: #101C37;
-    height: 400px;
+    height: 355px;
     border-radius: 50% 50% 25% 25% / 11% 11% 0% 0%;
 }
 
-.lang-form-footer-div svg:nth-of-type(2) {
+.footer-container-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.footer-container-ul li {
+    list-style: none;
+    text-align: center;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-container-ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-select {
+    width: 40px !important;
     color: #fff !important;
-    margin-left: -30px !important;
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer-select {
+        width: 80px !important;
+    }
+
+}
+
+
+
+
+/* Estilo general para todos los dispositivos */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para móviles pequeños */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+/* Estilos para móviles en orientación horizontal */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    body {
+        font-size: 15px;
+    }
+
+    .navbar {
+        display: block;
+    }
+}
+
+/* Estilos para tabletas en orientación vertical */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+/* Estilos para tabletas en orientación horizontal o pantallas pequeñas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para pantallas de escritorio medianas */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para pantallas de escritorio grandes */
+@media only screen and (min-width: 1201px) {
+    body {
+        font-size: 18px;
+    }
 }
