@@ -33,15 +33,10 @@ export default function Footer() {
                         Contáctanos
                     </Link>
                 </li>
-                <li>
-                    <Link>
-                        Portal de pacientes
-                    </Link>
-                </li>
-                <li>
-                    © 2024 Moya Medical. Todos los derechos reservados.
-                </li>
             </ul>
+            <p className='' style={{ textAlign: 'center', color: '#fff', marginTop: '10px', fontSize: '12px' }}>
+                © 2024 Moya Medical. Todos los derechos reservados.
+            </p>
         </div>
     )
 

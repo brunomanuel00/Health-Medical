@@ -26,8 +26,9 @@
 }
 
 .footer-select {
-    width: 40px !important;
+    width: 35px !important;
     color: #fff !important;
+    margin-right: 45px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -39,60 +40,82 @@
 
 
 
-
-/* Estilo general para todos los dispositivos */
-body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-}
-
 /* Estilos para móviles pequeños */
-@media only screen and (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-
-    .navbar {
-        display: none;
-    }
-}
+@media only screen and (max-width: 480px) {}
 
 /* Estilos para móviles en orientación horizontal */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-    body {
-        font-size: 15px;
-    }
-
-    .navbar {
-        display: block;
-    }
-}
+@media only screen and (min-width: 481px) and (max-width: 767px) {}
 
 /* Estilos para tabletas en orientación vertical */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    body {
-        font-size: 15px;
-    }
-}
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
 
 /* Estilos para tabletas en orientación horizontal o pantallas pequeñas */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    body {
-        font-size: 16px;
+    .footer-container {
+        padding-top: 40px;
+        border-radius: 46% 46% 25% 26% / 41% 41% 0% 0%;
+    }
+
+    .footer-container-ul {
+        flex-direction: row;
+    }
+
+    .footer-container-ul li {
+        margin: 10px;
+    }
+
+    .footer-select {
+        width: 65px !important;
+        margin-right: 0;
+
     }
 }
 
 /* Estilos para pantallas de escritorio medianas */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    body {
-        font-size: 16px;
+    .footer-container {
+        padding-top: 40px;
+        border-radius: 46% 46% 25% 26% / 59% 59% 0% 0%;
+    }
+
+    .footer-container-ul {
+        flex-direction: row;
+
+    }
+
+    .footer-container-ul li {
+        margin: 10px;
+    }
+
+    .footer-select {
+        width: 65px !important;
+        margin-right: 0;
+
     }
 }
 
 /* Estilos para pantallas de escritorio grandes */
 @media only screen and (min-width: 1201px) {
-    body {
-        font-size: 18px;
+    .footer-container {
+        padding-top: 40px;
+        border-radius: 46% 46% 25% 26% / 68% 68% 0% 0%;
+    }
+
+    .footer-container-ul {
+        flex-direction: row;
+        padding-top: 65px;
+
+    }
+
+    .footer-container-ul li {
+        margin: 20px;
+        font-size: 14px;
+
+    }
+
+    .footer-select {
+        width: 65px !important;
+        margin-right: 0;
+
     }
 }
