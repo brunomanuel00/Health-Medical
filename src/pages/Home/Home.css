@@ -3,7 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 65vh !important;
+    /* height: 65vh !important; */
+    margin-top: -1350px;
+    z-index: 11;
 }
 
 .home-content-subcards {
@@ -18,7 +20,7 @@
     color: #fff;
     text-align: center;
     z-index: 11;
-    margin-top: 180px;
+    /* margin-top: -1580px; */
     width: 360px;
     font-size: 50px;
 }
@@ -60,7 +62,6 @@
     width: 324px;
 }
 
-/**************************** Media 1 ****************************/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .home-title {
         font-size: 60px;
@@ -68,9 +69,6 @@
     }
 }
 
-
-
-/**************************** Media 2 ***************************/
 @media only screen and (min-width: 1025px) and (max-width: 1919px) {
     .home-title {
         font-size: 65px;
@@ -78,8 +76,6 @@
     }
 }
 
-
-/**************************** Media 3 ****************************/
 @media only screen and (min-width: 1920px) {
     .home-title {
         font-size: 70px;

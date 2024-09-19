@@ -33,3 +33,96 @@
     text-align: center !important;
     color: #626265 !important;
 }
+
+
+
+/* Estilos para móviles pequeños */
+@media only screen and (max-width: 480px) {}
+
+/* Estilos para móviles en orientación horizontal */
+@media only screen and (min-width: 481px) and (max-width: 767px) {}
+
+/* Estilos para tabletas en orientación vertical */
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
+
+/* Estilos para tabletas en orientación horizontal o pantallas pequeñas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .card-container {
+        max-width: 296px !important;
+        height: 367px !important;
+        padding: 0 15px !important;
+        margin: 20px !important;
+    }
+
+    .card-container-image {
+        padding: 25px !important;
+        height: 114px !important;
+        width: 114px !important;
+        margin: 27px auto 0 !important;
+    }
+
+    .card-title {
+        font-size: 30px !important;
+        color: #626265 !important;
+    }
+
+    .card-text {
+        font-size: 22px !important;
+
+    }
+}
+
+/* Estilos para pantallas de escritorio medianas */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .card-container {
+        max-width: 296px !important;
+        height: 367px !important;
+        padding: 0 15px !important;
+        margin: 20px !important;
+    }
+
+    .card-container-image {
+        padding: 25px !important;
+        height: 114px !important;
+        width: 114px !important;
+        margin: 27px auto 0 !important;
+    }
+
+    .card-title {
+        font-size: 30px !important;
+        color: #626265 !important;
+    }
+
+    .card-text {
+        font-size: 22px !important;
+
+    }
+}
+
+/* Estilos para pantallas de escritorio grandes */
+@media only screen and (min-width: 1201px) {
+    .card-container {
+        max-width: 296px !important;
+        height: 367px !important;
+        padding: 0 15px !important;
+        margin: 20px !important;
+    }
+
+    .card-container-image {
+        padding: 25px !important;
+        height: 114px !important;
+        width: 114px !important;
+        margin: 27px auto 0 !important;
+    }
+
+    .card-title {
+        font-size: 30px !important;
+        color: #626265 !important;
+    }
+
+    .card-text {
+        font-size: 22px !important;
+
+    }
+
+}

@@ -11,10 +11,10 @@ export default function Cards() {
     return (
         <>
             <div className="cards-container">
-                <CARD photoURL={curita} title={'Curita'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
-                <CARD photoURL={medicamento} title={'medicamento'}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
-                <CARD photoURL={cardiograma} title={'cardiograma'}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
-                <CARD photoURL={botiquin} title={'botiquin'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
+                <CARD photoURL={curita} title={'Atención de lesiones'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
+                <CARD photoURL={medicamento} title={'Prebas de drogas y alcohol'}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
+                <CARD photoURL={cardiograma} title={'Exámenes físicos'}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
+                <CARD photoURL={botiquin} title={'Medicina preventiva'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
             </div>
         </>
     )

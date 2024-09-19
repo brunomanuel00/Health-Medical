@@ -1,7 +1,7 @@
 .gradient-carrousel {
     height: 790px;
     width: 100%;
-    position: absolute;
+    position: relative;
     margin-top: -110px;
     z-index: 1;
     opacity: .7;
@@ -14,8 +14,8 @@
 .gradient-carrousel-container {
     width: 100%;
     flex-grow: 1;
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -790px;
     z-index: -1;
 }
 
@@ -39,4 +39,48 @@
     background-color: transparent !important;
     margin-top: -200px !important;
     z-index: 50;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .gradient-carrousel-swipeable-points {
+        background-color: transparent !important;
+        margin-top: -250px !important;
+        z-index: 50;
+    }
+
+    .gradient-carrousel-img {
+        height: 890px;
+        padding-bottom: 6px;
+        border-radius: 25% 25% 35% 35% / 0% 0% 10% 10%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .gradient-carrousel-swipeable-points {
+        background-color: transparent !important;
+        margin-top: -400px !important;
+        z-index: 50;
+    }
+
+    .gradient-carrousel-img {
+        height: 990px;
+        padding-bottom: 6px;
+        border-radius: 25% 25% 35% 35% / 0% 0% 13% 13%;
+    }
+}
+
+
+@media only screen and (min-width: 1201px) {
+    .gradient-carrousel-swipeable-points {
+        background-color: transparent !important;
+        margin-top: -500px !important;
+        z-index: 50;
+    }
+
+    .gradient-carrousel-img {
+        height: 1090px;
+        padding-bottom: 6px;
+        border-radius: 25% 25% 35% 35% / 0% 0% 17% 17%;
+    }
+
 }
