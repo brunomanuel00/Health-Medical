@@ -100,7 +100,35 @@
 }
 
 /* Estilos para pantallas de escritorio grandes */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+    .card-container {
+        max-width: 246px !important;
+        height: 307px !important;
+        padding: 0 15px !important;
+        margin: 20px !important;
+    }
+
+    .card-container-image {
+        padding: 20px !important;
+        height: 94px !important;
+        width: 94px !important;
+        margin: 20px auto 0 !important;
+    }
+
+    .card-title {
+        font-size: 24px !important;
+        color: #626265 !important;
+    }
+
+    .card-text {
+        font-size: 18px !important;
+
+    }
+
+}
+
+/* Estilos para pantallas de escritorio grandes */
+@media only screen and (min-width: 1501px) {
     .card-container {
         max-width: 296px !important;
         height: 367px !important;

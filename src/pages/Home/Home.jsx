@@ -27,18 +27,25 @@ export default function Home() {
                     Ver más
                 </Button>
             </div>
-            <div className="home-content-subcards">
-                <img src={doctors} height={'215px'} width={'324px'} alt=" doctors" />
+            <div className='home-dot-container'>
+
+                <div className="home-content-subcards">
+                    <img className='home-content-subcards-img' src={doctors} height={'215px'} width={'324px'} alt=" doctors" />
+                </div>
+                <div className="home-content-subcards">
+                    <h3 className="home-content-h3">
+                        Servicios DOT
+                    </h3>
+                    <p className="home-content-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+
+                </div>
             </div>
-            <div className="home-content-subcards">
-                <h3 className="home-content-h3">
-                    Servicios DOT
-                </h3>
-                <p className="home-content-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+            <div className='home-content-subcards'>
                 <Button className="home-subcards-button" variant="contained">
                     Ver más
                 </Button>
             </div>
+
             <Footer />
         </div>
     )
