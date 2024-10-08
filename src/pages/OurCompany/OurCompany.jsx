@@ -1,4 +1,11 @@
+import BackgroundTop from "../../components/BackgroundTop/BackgroundTop"
+import tetoscopio from '../../assets/ourcompany.png'
+
 export default function OurCompany() {
-    return <div> Our Company</div>
+    return (
+        <>
+            <BackgroundTop photo={tetoscopio} text={'Nuestra Compañía'} />
+        </>
+    )
 
 };

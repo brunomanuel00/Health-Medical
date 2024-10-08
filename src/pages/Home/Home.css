@@ -114,13 +114,21 @@
     }
 
     .home-content-subcards-img {
-        height: 365px;
-        width: 524px;
+        height: 325px;
+        width: 484px;
     }
 
     .home-content-h3 {
-        font-size: 35px;
+        font-size: 50px;
         font-weight: 900;
+        margin-top: -10px;
+        margin-left: 14px;
+    }
+
+    .home-content-text {
+        font-size: 18px;
+        width: 450px;
+        line-height: 1.7;
     }
 }
 
