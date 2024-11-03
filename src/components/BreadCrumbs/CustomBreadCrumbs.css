@@ -1,0 +1,57 @@
+.container-breadcrumbs {
+    position: relative;
+    z-index: 100;
+    margin: auto;
+    /* background-color: #f5f5f5 !important; */
+}
+
+
+
+
+/* Estilos para móviles pequeños */
+@media only screen and (max-width: 480px) {
+    .container-breadcrumbs {
+        display: none;
+    }
+}
+
+/* Estilos para móviles en orientación horizontal */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .container-breadcrumbs {
+        display: none;
+    }
+}
+
+/* Estilos para tabletas en orientación vertical */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container-breadcrumbs {
+        display: none;
+    }
+}
+
+/* Estilos para tabletas en orientación horizontal o pantallas pequeñas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* Estilos para pantallas de escritorio medianas */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+/* Estilos para pantallas de escritorio grandes */
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+    .container-breadcrumbs {
+        width: 90%;
+        margin-top: -1900px;
+    }
+}
+
+/* Estilos para pantallas de escritorio grandes */
+@media only screen and (min-width: 1501px) {
+    .container-breadcrumbs {
+        width: 60%;
+        margin: auto;
+        margin-top: -1600px;
+    }
+
+    .breadcrumbs-text {
+        font-size: 18px !important;
+    }
+}

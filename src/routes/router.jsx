@@ -10,8 +10,12 @@ const router = createBrowserRouter([{
         path: '/',
         element: <Home />
     }, {
-        path: 'ourcompany',
-        element: <OurCompany />
+        path: '/our-company',
+        element: <OurCompany />,
+        children: [{
+            path: 'moyal-medical',
+            element: <OurCompany />,
+        }]
     }]
 },
 ])

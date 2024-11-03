@@ -53,7 +53,7 @@ export function ListMenuSimple() {
         <div className='health-navbar-menu-simple'>
             <ul className='health-navbar-menu-simple-ul'>
                 <li>
-                    <Link to='/ourcompany'>
+                    <Link to='/our-company'>
                         Nuestra Compañía
                     </Link>
                 </li>

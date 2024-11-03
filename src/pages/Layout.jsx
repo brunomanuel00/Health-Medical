@@ -26,10 +26,10 @@ export default function Layout() {
         <>
             <Navbar />
 
-            {/* <div>
+            <div style={{ position: 'absolute', zIndex: 70 }}>
                 <p>Anchura de la ventana: {windowSize.width}px</p>
                 <p>Altura de la ventana: {windowSize.height}px</p>
-            </div> */}
+            </div>
             <main>
                 <Outlet />
             </main>
