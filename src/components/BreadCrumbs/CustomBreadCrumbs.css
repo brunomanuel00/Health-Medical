@@ -2,7 +2,6 @@
     position: relative;
     z-index: 100;
     margin: auto;
-    /* background-color: #f5f5f5 !important; */
 }
 
 
@@ -30,10 +29,20 @@
 }
 
 /* Estilos para tabletas en orientación horizontal o pantallas pequeñas */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container-breadcrumbs {
+        width: 80%;
+        margin-top: -600px;
+    }
+}
 
 /* Estilos para pantallas de escritorio medianas */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .container-breadcrumbs {
+        width: 90%;
+        margin-top: -1000px;
+    }
+}
 
 /* Estilos para pantallas de escritorio grandes */
 @media only screen and (min-width: 1201px) and (max-width: 1500px) {
@@ -44,7 +53,19 @@
 }
 
 /* Estilos para pantallas de escritorio grandes */
-@media only screen and (min-width: 1501px) {
+@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+    .container-breadcrumbs {
+        width: 64%;
+        margin: auto;
+        margin-top: -1200px;
+    }
+
+    .breadcrumbs-text {
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (min-width: 1701px) {
     .container-breadcrumbs {
         width: 60%;
         margin: auto;
