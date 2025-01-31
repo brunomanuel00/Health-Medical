@@ -52,13 +52,22 @@ export function ListMenuSimple() {
     return (
         <div className='health-navbar-menu-simple'>
             <ul className='health-navbar-menu-simple-ul'>
-                <li>
-                    <Link to='/our-company'>
-                        Nuestra Compañía
-                    </Link>
+                <li className="dropDown">
+                    Nuestra Compañía
+                    <ul className="dropdown-menu">
+                        <li>
+                            <Link to="/our-company">Moyal Medical</Link>
+                        </li>
+                        <li>
+                            <Link to="/our-company/why-us">Por qué nosotros</Link>
+                        </li>
+                        <li>
+                            <Link to="/location">Ubicación en el mapa</Link>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <Link>
+                    <Link to="/our-services">
                         Nuestros Servicios
                     </Link>
                 </li>
@@ -66,12 +75,12 @@ export function ListMenuSimple() {
                     <Lang lang={lang} setLang={setLang} />
                 </li>
                 <li>
-                    <Link>
+                    <Link to="/contact-us">
                         Contáctanos
                     </Link>
                 </li>
                 <li>
-                    <Link>
+                    <Link to="/patient-portal">
                         Portal de pacientes
                     </Link>
                 </li>

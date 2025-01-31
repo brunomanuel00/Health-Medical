@@ -1,3 +1,53 @@
+.dropDown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropDown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 10px;
+    list-style: none;
+    margin-top: 5px;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    min-width: 150px;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.dropDown:hover .dropdown-menu,
+.dropDown .dropdown-menu:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropDown .dropdown-menu li {
+    margin: 0;
+}
+
+.dropDown .dropdown-menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Efecto hover en los enlaces */
+.dropDown .dropdown-menu li a:hover {
+    background-color: #158EE2;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
 .health-navbar-nav {
     display: flex;
     justify-content: space-evenly;

@@ -2,13 +2,15 @@ import React from "react"
 import Carrousel from "../../components/Carrousel/Carrousel"
 import './Home.css';
 import Cards from "../../components/Cards/Cards";
-import Footer from '../../components/Footer/Footer'
 import Button from '@mui/material/Button';
 import doctors from '../../assets/Doctors.png'
+import Navbar from "../../components/NavBar/NavBar";
+import { loremShort } from '../../utils/content'
 
 export default function Home() {
     return (
         <div>
+            <Navbar />
             <Carrousel />
             <div className="home-container-presentation">
                 <h1 className='home-title'>
@@ -36,7 +38,7 @@ export default function Home() {
                     <h3 className="home-content-h3">
                         Servicios DOT
                     </h3>
-                    <p className="home-content-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+                    <p className="home-content-text">{loremShort}</p>
 
                 </div>
             </div>
@@ -45,8 +47,6 @@ export default function Home() {
                     Ver más
                 </Button>
             </div>
-
-            <Footer />
         </div>
     )
 

@@ -1,8 +1,8 @@
 /* BackgroundTop.css */
 .background-wrapper {
     position: relative;
+    margin-top: -100px;
     width: 100%;
-    overflow: hidden;
 }
 
 .background-container {
@@ -15,6 +15,7 @@
     width: 100%;
     height: auto;
     display: block;
+    height: 380px;
     object-fit: cover;
     border-radius: 25% 25% 50% 50% / 0% 0% 7% 7%;
 }
@@ -26,20 +27,20 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(180deg,
-            rgba(0, 22, 57, 0.9) 0%,
-            rgba(0, 22, 57, 0.6) 50%,
-            rgba(0, 22, 57, 0.3) 100%);
+            rgba(0, 22, 57, 1) 0%,
+            rgba(0, 22, 57, 0.6012998949579832) 13%,
+            rgba(0, 22, 57, 0) 100%);
     border-radius: 25% 25% 50% 50% / 0% 0% 7% 7%;
 }
 
 .title-presentation {
     position: absolute;
-    top: 50%;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: center;
-    z-index: 2;
+    z-index: 20;
     width: 100%;
     font-size: 55px;
 }
@@ -47,30 +48,53 @@
 /* Media Queries */
 @media only screen and (max-width: 480px) {
     .title-presentation {
-        font-size: 40px;
+        font-size: 50px;
+        top: 230px;
+
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     .title-presentation {
         font-size: 60px;
+        top: 300px;
     }
+
+    .background-container-img {
+        height: 480px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .title-presentation {
         font-size: 75px;
+        top: 300px;
+    }
+
+    .background-container-img {
+        height: 580px;
     }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     .title-presentation {
         font-size: 90px;
+        top: 300px;
+    }
+
+    .background-container-img {
+        height: 580px;
     }
 }
 
 @media only screen and (min-width: 1201px) {
     .title-presentation {
         font-size: 105px;
+        top: 300px;
+    }
+
+    .background-container-img {
+        height: 580px;
     }
 }

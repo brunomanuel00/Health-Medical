@@ -6,8 +6,8 @@ import { Breadcrumbs, Link, Typography, Box } from '@mui/material';
 import './CustomBreadCrumbs.css';
 
 const routeNameMap = {
-    'our-company': 'Our Company',
-    'moyal-medical': 'Moyal Medical',
+    'our-company': 'Nuestra Compañía',
+    'why-us': 'Por qué nosotros',
     'users': 'Usuarios',
     'dashboard': 'Panel Principal',
     'settings': 'Configuración',

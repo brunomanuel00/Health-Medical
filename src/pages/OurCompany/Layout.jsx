@@ -1,6 +1,8 @@
 import { Outlet } from 'react-router-dom';
-import Navbar from '../components/NavBar/NavBar'
+import Navbar from '../../components/NavBar/NavBar'
 import React, { useState, useEffect } from 'react';
+import Footer from '../../components/Footer/Footer';
+import './Layout.css'
 
 export default function Layout() {
 
@@ -25,7 +27,6 @@ export default function Layout() {
     return (
         <>
             <Navbar />
-
             <div style={{ position: 'absolute', zIndex: 70 }}>
                 <p>Anchura de la ventana: {windowSize.width}px</p>
                 <p>Altura de la ventana: {windowSize.height}px</p>
@@ -33,8 +34,7 @@ export default function Layout() {
             <main>
                 <Outlet />
             </main>
-
-
+            <Footer />
         </>
     )
 };
