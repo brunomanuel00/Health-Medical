@@ -26,6 +26,10 @@
     visibility: visible;
 }
 
+.dropDown:hover {
+    color: #158EE2;
+}
+
 .dropDown .dropdown-menu li {
     margin: 0;
 }

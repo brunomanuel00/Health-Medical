@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import doctors from '../../assets/Doctors.png'
 import Navbar from "../../components/NavBar/NavBar";
 import { loremShort } from '../../utils/content'
+import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
     return (
@@ -30,7 +31,6 @@ export default function Home() {
                 </Button>
             </div>
             <div className='home-dot-container'>
-
                 <div className="home-content-subcards">
                     <img className='home-content-subcards-img' src={doctors} height={'215px'} width={'324px'} alt=" doctors" />
                 </div>
@@ -39,7 +39,6 @@ export default function Home() {
                         Servicios DOT
                     </h3>
                     <p className="home-content-text">{loremShort}</p>
-
                 </div>
             </div>
             <div className='home-content-subcards'>
@@ -47,6 +46,7 @@ export default function Home() {
                     Ver más
                 </Button>
             </div>
+            <Footer />
         </div>
     )
 

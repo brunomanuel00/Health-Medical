@@ -62,7 +62,7 @@ export function ListMenuSimple() {
                             <Link to="/our-company/why-us">Por qué nosotros</Link>
                         </li>
                         <li>
-                            <Link to="/location">Ubicación en el mapa</Link>
+                            <Link to="/our-company/location-map">Ubicación en el mapa</Link>
                         </li>
                     </ul>
                 </li>
