@@ -16,12 +16,12 @@ export default function Footer() {
                     </Link>
                 </li>
                 <li>
-                    <Link to='/ourcompany'>
+                    <Link to='/our-company'>
                         Nuestra Compañía
                     </Link>
                 </li>
                 <li>
-                    <Link>
+                    <Link to='/our-services'>
                         Nuestros Servicios
                     </Link>
                 </li>
@@ -29,7 +29,7 @@ export default function Footer() {
                     <LangFooter lang={lang} setLang={setLang} />
                 </li>
                 <li>
-                    <Link>
+                    <Link to='/contact-us'>
                         Contáctanos
                     </Link>
                 </li>
