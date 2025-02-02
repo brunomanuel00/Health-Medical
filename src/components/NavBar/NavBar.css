@@ -44,7 +44,6 @@
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-/* Efecto hover en los enlaces */
 .dropDown .dropdown-menu li a:hover {
     background-color: #158EE2;
     color: #ffffff;
@@ -87,6 +86,15 @@
 .health-navbar-menu-simple-ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+.link-modal {
+    color: #626265;
+    text-decoration: none;
+}
+
+.link-modal:hover {
+    color: #158EE2 !important;
 }
 
 .health-navbar-menu-simple-ul li a:hover {

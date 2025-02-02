@@ -24,23 +24,23 @@ export function ListMenu({ open, toggleDrawer, handleClick, colorR, lang, setLan
                 <Collapse in={open} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
                         <ListItemButton sx={{ pl: 4 }}>
-                            <Link to="/our-company">Moyal Medical</Link>
+                            <Link className='link-modal' to="/our-company">Moyal Medical</Link>
                         </ListItemButton>
                         <ListItemButton sx={{ pl: 4 }}>
-                            <Link to="/our-company/why-us">Por qué nosotros</Link>
+                            <Link className='link-modal' to="/our-company/why-us">Por qué nosotros</Link>
                         </ListItemButton>
                         <ListItemButton sx={{ pl: 4 }}>
-                            <Link to="/our-company/location-map">Ubicación en el mapa</Link>
+                            <Link className='link-modal' to="/our-company/location-map">Ubicación en el mapa</Link>
                         </ListItemButton>
                     </List>
                 </Collapse>
                 <ListItemButton>
-                    <Link to="/our-services">
+                    <Link className='link-modal' to="/our-services">
                         Nuestros Servicios
                     </Link>
                 </ListItemButton>
                 <ListItemButton>
-                    <Link to="/contact-us">
+                    <Link className='link-modal' to="/contact-us">
                         Contáctanos
                     </Link>
                 </ListItemButton>
