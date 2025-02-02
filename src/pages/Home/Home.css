@@ -49,6 +49,11 @@
     margin-top: 50px !important;
 }
 
+.home-contact-button a, .home-subcards-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .home-subcards-button {
     z-index: 11;
     width: 320px;

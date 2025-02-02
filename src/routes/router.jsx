@@ -5,6 +5,7 @@ import Home from "../pages/Home/Home";
 import WhyUs from "../pages/OurCompany/WhyUs/WhyUs";
 import LocationMap from "../pages/OurCompany/LocationMap/LocationMap";
 import OurService from "../pages/OurService/OurService";
+import ContactUs from "../pages/ContactUs/ContactUs";
 
 const router = createBrowserRouter([
     {
@@ -36,6 +37,15 @@ const router = createBrowserRouter([
             {
                 path: '',
                 element: <OurService />,
+            },
+        ]
+    }, {
+        path: '/contact-us',
+        element: <Layout />,
+        children: [
+            {
+                path: '',
+                element: <ContactUs />,
             },
         ]
     },

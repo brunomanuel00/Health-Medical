@@ -7,8 +7,11 @@ import doctors from '../../assets/Doctors.png'
 import Navbar from "../../components/NavBar/NavBar";
 import { loremShort } from '../../utils/content'
 import Footer from "../../components/Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+    const navigate = useNavigate()
+
     return (
         <div>
             <Navbar />
@@ -17,7 +20,7 @@ export default function Home() {
                 <h1 className='home-title'>
                     Tu bienestar es nuestra prioridad
                 </h1>
-                <Button className="home-contact-button" variant="contained">
+                <Button className="home-contact-button" variant="contained" onClick={() => navigate('/contact-us')}>
                     Contáctanos
                 </Button>
             </div>
@@ -26,7 +29,7 @@ export default function Home() {
                 <h3 className='home-card-subtitle'>
                     Explora todos nuestros servicios
                 </h3>
-                <Button className="home-subcards-button" variant="contained">
+                <Button className="home-subcards-button" variant="contained" onClick={() => navigate('/our-services')}>
                     Ver más
                 </Button>
             </div>

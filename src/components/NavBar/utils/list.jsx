@@ -83,11 +83,6 @@ export function ListMenuSimple() {
                         Contáctanos
                     </Link>
                 </li>
-                <li>
-                    <Link to="/patient-portal">
-                        Portal de pacientes
-                    </Link>
-                </li>
             </ul>
         </div>
     )
