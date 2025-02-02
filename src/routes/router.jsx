@@ -6,15 +6,26 @@ import WhyUs from "../pages/OurCompany/WhyUs/WhyUs";
 import LocationMap from "../pages/OurCompany/LocationMap/LocationMap";
 import OurService from "../pages/OurService/OurService";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import { SmoothScrollToTop } from "../utils/ScrollTop"; // Importa el componente que prefieras
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Home />
+        element: (
+            <>
+                <SmoothScrollToTop />
+                <Home />
+            </>
+        )
     },
     {
         path: '/our-company',
-        element: <Layout />,
+        element: (
+            <>
+                <SmoothScrollToTop />
+                <Layout />
+            </>
+        ),
         children: [
             {
                 path: 'why-us',
@@ -32,16 +43,27 @@ const router = createBrowserRouter([
     },
     {
         path: '/our-services',
-        element: <Layout />,
+        element: (
+            <>
+                <SmoothScrollToTop />
+                <Layout />
+            </>
+        ),
         children: [
             {
                 path: '',
                 element: <OurService />,
             },
         ]
-    }, {
+    },
+    {
         path: '/contact-us',
-        element: <Layout />,
+        element: (
+            <>
+                <SmoothScrollToTop />
+                <Layout />
+            </>
+        ),
         children: [
             {
                 path: '',
