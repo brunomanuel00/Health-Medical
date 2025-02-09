@@ -1,19 +1,19 @@
 import React from "react"
 import DescriptionContainer from "../../components/Description/DescriptionContainer"
 import BackgroundTop from "../../components/BackgroundTop/BackgroundTop"
-import services from '../../assets/services.png'
+import services from '../../assets/services.webp'
 import CustomBreadCrumbs from "../../components/BreadCrumbs/CustomBreadCrumbs"
 import CARD from "../../components/Cards/card/Card"
-import botiquin from '../../assets/botiquin.png'
-import curita from '../../assets/curita.png'
-import cardiograma from '../../assets/cardiograma.png'
-import medicamento from '../../assets/medicamento.png'
-import tetoscopio from '../../assets/tetoscopio.png'
-import plane from '../../assets/plane.png'
-import people from '../../assets/people.png'
-import balance from '../../assets/balance.png'
-import potion from '../../assets/potion.png'
-import transport from '../../assets/transport.png'
+import botiquin from '../../assets/botiquin.webp'
+import curita from '../../assets/curita.webp'
+import cardiograma from '../../assets/cardiograma.webp'
+import medicamento from '../../assets/medicamento.webp'
+import tetoscopio from '../../assets/tetoscopio.webp'
+import plane from '../../assets/plane.webp'
+import people from '../../assets/people.webp'
+import balance from '../../assets/balance.webp'
+import potion from '../../assets/potion.webp'
+import transport from '../../assets/transport.webp'
 
 
 export default function OurService() {

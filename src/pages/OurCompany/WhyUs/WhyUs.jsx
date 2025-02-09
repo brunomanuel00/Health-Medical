@@ -1,5 +1,5 @@
 import React from "react"
-import heartDoctor from '../../../assets/heart-doctor.png'
+import heartDoctor from '../../../assets/heart-doctor.webp'
 import BackgroundTop from "../../../components/BackgroundTop/BackgroundTop"
 import CustomBreadCrumbs from "../../../components/BreadCrumbs/CustomBreadCrumbs"
 import DescriptionBlock from "../../../components/DescriptionBlock/DescriptionBlock"
@@ -7,9 +7,9 @@ import DescriptionContainer from "../../../components/Description/DescriptionCon
 import { content, loremShort } from '../../../utils/content'
 import StarRating from "../../../components/StarRating/StarRating"
 import TargetArticle from "../../../components/TargetArticle/TargetArticle"
-import testimonio1 from '../../../assets/Testimonio1.png'
-import testimonio2 from '../../../assets/Testimonio2.png'
-import testimonio3 from '../../../assets/Testimonio3.png'
+import testimonio1 from '../../../assets/Testimonio1.webp'
+import testimonio2 from '../../../assets/Testimonio2.webp'
+import testimonio3 from '../../../assets/Testimonio3.webp'
 
 
 export default function WhyUs() {

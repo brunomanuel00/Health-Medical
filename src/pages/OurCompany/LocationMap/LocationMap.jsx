@@ -1,13 +1,13 @@
 import React from "react"
 import BackgroundTop from "../../../components/BackgroundTop/BackgroundTop"
 import CustomBreadCrumbs from "../../../components/BreadCrumbs/CustomBreadCrumbs"
-import ubicacion from '../../../assets/Ubicacion.png'
-import googlemap from '../../../assets/GoogleMap.png'
+import ubicacion from '../../../assets/Ubicacion.webp'
+import googlemap from '../../../assets/GoogleMap.webp'
 import DescriptionContainer from "../../../components/Description/DescriptionContainer"
-import location from '../../../assets/location.png'
-import phone from '../../../assets/phone.png'
-import mail from '../../../assets/mail.png'
-import network from '../../../assets/network.png'
+import location from '../../../assets/location.webp'
+import phone from '../../../assets/phone.webp'
+import mail from '../../../assets/mail.webp'
+import network from '../../../assets/network.webp'
 import './LocationMap.css'
 
 export default function LocationMap() {

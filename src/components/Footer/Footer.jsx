@@ -2,7 +2,7 @@ import './Footer.css'
 import { Link } from 'react-router-dom';
 import LangFooter from './utils/LangFooter';
 import { useState } from 'react';
-import logo from '../../assets/company.png'
+import logo from '../../assets/company.webp'
 
 export default function Footer() {
 

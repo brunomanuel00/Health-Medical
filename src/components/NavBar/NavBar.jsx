@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './NavBar.css';
 import { Link } from "react-router-dom";
 import DehazeIcon from '@mui/icons-material/Dehaze';
-import logo from '../../assets/company.png';
+import logo from '../../assets/company.webp';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import { ListMenu, ListMenuSimple } from './utils/list';
 

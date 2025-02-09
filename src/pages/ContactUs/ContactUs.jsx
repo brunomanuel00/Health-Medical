@@ -1,6 +1,6 @@
 import React from "react"
 import BackgroundTop from "../../components/BackgroundTop/BackgroundTop"
-import contact from '../../assets/contact-us.jpg'
+import contact from '../../assets/contact-us.webp'
 import CustomBreadCrumbs from "../../components/BreadCrumbs/CustomBreadCrumbs"
 import DescriptionContainer from "../../components/Description/DescriptionContainer"
 import CardContactUs from "./components/CardContactUs"

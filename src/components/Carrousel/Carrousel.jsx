@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import MobileStepper from '@mui/material/MobileStepper';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-import doctor1 from '../../assets/Doctor.png'
+import doctor1 from '../../assets/Doctor.webp'
 import doctor2 from '../../assets/Doctor-2.webp'
 import doctor3 from '../../assets/Doctor-3.webp'
 import './Carrousel.css'

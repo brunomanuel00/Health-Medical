@@ -1,9 +1,9 @@
 import React from "react";
 import './Cards.css'
-import botiquin from '../../assets/botiquin.png'
-import curita from '../../assets/curita.png'
-import cardiograma from '../../assets/cardiograma.png'
-import medicamento from '../../assets/medicamento.png'
+import botiquin from '../../assets/botiquin.webp'
+import curita from '../../assets/curita.webp'
+import cardiograma from '../../assets/cardiograma.webp'
+import medicamento from '../../assets/medicamento.webp'
 
 import CARD from "./card/Card";
 

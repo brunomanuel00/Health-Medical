@@ -3,7 +3,7 @@ import Carrousel from "../../components/Carrousel/Carrousel"
 import './Home.css';
 import Cards from "../../components/Cards/Cards";
 import Button from '@mui/material/Button';
-import doctors from '../../assets/Doctors.png'
+import doctors from '../../assets/Doctors.webp'
 import Navbar from "../../components/NavBar/NavBar";
 import { loremShort } from '../../utils/content'
 import Footer from "../../components/Footer/Footer";

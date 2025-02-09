@@ -6,7 +6,7 @@ import WhyUs from "../pages/OurCompany/WhyUs/WhyUs";
 import LocationMap from "../pages/OurCompany/LocationMap/LocationMap";
 import OurService from "../pages/OurService/OurService";
 import ContactUs from "../pages/ContactUs/ContactUs";
-import { SmoothScrollToTop } from "../utils/ScrollTop"; // Importa el componente que prefieras
+import { SmoothScrollToTop } from "../utils/ScrollTop";
 
 const router = createBrowserRouter([
     {

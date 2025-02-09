@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Select, MenuItem, FormControl } from '@mui/material';
-import spain from '../../../assets/Spain (ES).png';
-import usa from '../../../assets/United States of America (US).png';
+import spain from '../../../assets/Spain (ES).webp';
+import usa from '../../../assets/United States of America (US).webp';
 import CloseIcon from '@mui/icons-material/Close';
 import { ExpandLess, ExpandMore } from '@mui/icons-material';
 
