@@ -8,11 +8,8 @@ import './CustomBreadCrumbs.css';
 const routeNameMap = {
     'our-company': 'Nuestra Compañía',
     'why-us': 'Por qué nosotros',
-    'users': 'Usuarios',
-    'dashboard': 'Panel Principal',
-    'settings': 'Configuración',
-    'profile': 'Perfil',
-    'orders': 'Órdenes',
+    'our-services': 'Nuestos Servicios',
+    'contact-us': 'Contáctanos',
 };
 
 export default function CustomBreadCrumbs() {
