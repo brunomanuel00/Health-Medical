@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Box, List, ListItemButton, ListItemText, Collapse } from '@mui/material';
 import { ExpandLess, ExpandMore } from '@mui/icons-material';
 import Lang from './lang';
@@ -51,7 +51,6 @@ export function ListMenu({ open, toggleDrawer, handleClick, colorR, lang, setLan
 
 
 export function ListMenuSimple() {
-    const [lang, setLang] = useState('ES');
 
     return (
         <div className='health-navbar-menu-simple'>
@@ -74,9 +73,6 @@ export function ListMenuSimple() {
                     <Link to="/our-services">
                         Nuestros Servicios
                     </Link>
-                </li>
-                <li>
-                    <Lang lang={lang} setLang={setLang} />
                 </li>
                 <li>
                     <Link to="/contact-us">
