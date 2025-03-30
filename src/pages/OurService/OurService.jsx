@@ -28,12 +28,12 @@ export default function OurService() {
                     <CARD photoURL={medicamento} title={'Prebas de drogas y alcohol'}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
                     <CARD photoURL={cardiograma} title={'Exámenes físicos'}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
                     <CARD photoURL={botiquin} title={'Medicina preventiva'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
-                    <CARD photoURL={plane} title={'Medicina preventiva'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
-                    <CARD photoURL={tetoscopio} title={'Medicina preventiva'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
-                    <CARD photoURL={people} title={'Medicina preventiva'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
-                    <CARD photoURL={balance} title={'Medicina preventiva'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
-                    <CARD photoURL={potion} title={'Medicina preventiva'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
-                    <CARD photoURL={transport} title={'Medicina preventiva'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
+                    <CARD photoURL={plane} title={'Examen médico de inmigración'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
+                    <CARD photoURL={tetoscopio} title={'Atención rápida'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
+                    <CARD photoURL={people} title={'Programa de asistencia a empleados'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
+                    <CARD photoURL={balance} title={'Cumplimiento normativo'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
+                    <CARD photoURL={potion} title={'Recolección de muestras 24h'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
+                    <CARD photoURL={transport} title={'Servicios DOT'} >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</CARD>
                 </div>
             </DescriptionContainer>
 
